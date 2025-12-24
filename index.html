@@ -1,258 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>T. Michael | Gospel Rap Artist</title>
-<meta name="description" content="Official website of T. Michael – Gospel Rap artist blending faith, drill, and afrobeats." />
+<meta name="description" content="Official website of T. Michael – Stream on Spotify, Boomplay, Audiomack, Apple Music & YouTube Music.">
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome (Social Icons) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ===== THEME ===== */
+:root {
+  --gold:#d4af37;
+  --dark:#0b0b0b;
+  --card:#151515;
+}
 
-/* GLOBAL */
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #0b0b0b;
-  color: #fff;
-  line-height: 1.6;
+  font-family:'Poppins',sans-serif;
+  background:var(--dark);
+  color:#fff;
 }
 
-a { color: #00ffcc; text-decoration: none; }
+a { color:var(--gold); text-decoration:none; }
 
-/* NAV */
+/* ===== NAV ===== */
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.95);
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
+  position:fixed; top:0; width:100%;
+  padding:16px 40px;
+  background:#000;
+  display:flex; justify-content:space-between;
+  z-index:1000;
 }
 
-nav ul { display: flex; gap: 25px; list-style: none; }
+nav strong { color:var(--gold); letter-spacing:2px; }
 
-/* HERO */
+nav ul { display:flex; gap:25px; list-style:none; }
+
+/* ===== HERO ===== */
 header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  min-height:100vh;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center;
   background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
     url("https://images.unsplash.com/photo-1511379938547-c1f69419868d")
-    center / cover no-repeat;
+    center/cover;
 }
 
 header h1 {
-  font-size: 3.5rem;
-  animation: fadeDown 1.2s ease;
+  font-size:3.8rem;
+  color:var(--gold);
+  animation:fadeDown 1.2s ease;
 }
 
 header p {
-  margin: 20px 0;
-  font-size: 1.2rem;
-  animation: fadeUp 1.2s ease;
+  margin:20px 0;
+  animation:fadeUp 1.2s ease;
 }
 
 header a {
-  padding: 12px 30px;
-  background: #00ffcc;
-  color: #000;
-  border-radius: 30px;
-  font-weight: 600;
+  padding:14px 38px;
+  border:2px solid var(--gold);
+  border-radius:30px;
+  transition:.3s;
 }
 
-/* ANIMATIONS */
+header a:hover { background:var(--gold); color:#000; }
+
+/* ===== ANIMATIONS ===== */
 @keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from{opacity:0;transform:translateY(-30px);}
+  to{opacity:1;transform:none;}
 }
-
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:none;}
 }
 
-/* SECTIONS */
-section {
-  padding: 100px 10%;
+/* ===== SECTIONS ===== */
+section { padding:120px 10%; }
+h2 { color:var(--gold); margin-bottom:35px; }
+
+/* ===== SMART LINKS ===== */
+.smart-links {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
 }
 
-section h2 {
-  margin-bottom: 25px;
-  font-size: 2.2rem;
-  letter-spacing: 2px;
+.smart-links a {
+  background:var(--card);
+  padding:18px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  border:1px solid var(--gold);
+  transition:.3s;
 }
 
-/* MUSIC EMBEDS */
+.smart-links a:hover {
+  background:var(--gold);
+  color:#000;
+}
+
+/* ===== EMBEDS ===== */
+.platforms {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.platform {
+  background:var(--card);
+  padding:20px;
+  border-radius:14px;
+}
+
 iframe {
-  width: 100%;
-  height: 380px;
-  border-radius: 12px;
-  border: none;
-  margin-bottom: 25px;
+  width:100%;
+  height:380px;
+  border:none;
+  border-radius:10px;
 }
 
-/* SOCIALS */
-.socials {
-  display: flex;
-  gap: 20px;
-  margin-top: 25px;
-}
-
-.socials a {
-  font-size: 1.6rem;
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 50%;
-}
-
-/* MERCH */
-.merch-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.merch-item {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.merch-item img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.merch-item button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #00ffcc;
-  border-radius: 20px;
-  font-weight: 600;
-}
-
-/* CONTACT */
-.contact form {
-  max-width: 520px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea, button {
-  padding: 14px;
-  border-radius: 6px;
-  border: none;
-}
-
-button {
-  background: #00ffcc;
-  font-weight: 700;
-}
-
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
-  text-align: center;
-  padding: 30px;
-  background: #000;
-  opacity: 0.7;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  header h1 { font-size: 2.4rem; }
+  padding:30px;
+  text-align:center;
+  background:#000;
+  color:#777;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ========================= -->
+<!-- 🔗 LINK CONFIG (EDIT HERE ONLY) -->
+<!-- ========================= -->
+<script>
+const LINKS = {
+  spotify: "https://open.spotify.com/artist/YOUR_SPOTIFY_ID",
+  boomplay: "https://www.boomplay.com/artists/YOUR_BOOMPLAY_ID",
+  audiomack: "https://audiomack.com/YOUR_USERNAME",
+  apple: "https://music.apple.com/artist/YOUR_APPLE_ID",
+  youtube: "https://www.youtube.com/channel/YOUR_CHANNEL_ID",
+  deezer: "https://www.deezer.com/artist/YOUR_DEEZER_ID",
+
+  spotifyEmbed: "https://open.spotify.com/embed/artist/YOUR_SPOTIFY_ID",
+  boomplayEmbed: "https://www.boomplay.com/embed/track/YOUR_TRACK_ID",
+  audiomackEmbed: "https://audiomack.com/embed/YOUR_USERNAME/song/YOUR_TRACK",
+  appleEmbed: "https://embed.music.apple.com/ng/artist/YOUR_APPLE_ID",
+  youtubeEmbed: "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+};
+</script>
+
 <nav>
-  <strong>T. Michael</strong>
-  <ul>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#merch">Merch</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<strong>T. MICHAEL</strong>
+<ul>
+<li><a href="#smart">Smart Link</a></li>
+<li><a href="#music">Music</a></li>
+</ul>
 </nav>
 
 <header>
-  <div>
-    <h1>T. Michael</h1>
-    <p>Gospel Rap | Drill | Afrobeats</p>
-    <a href="#music">▶ Listen Now</a>
-  </div>
+<div>
+<h1>T. MICHAEL</h1>
+<p>Gospel Rap • Drill • Afrobeats</p>
+<a href="#smart">Stream Now</a>
+</div>
 </header>
 
+<!-- ===== SMART LINK ===== -->
+<section id="smart">
+<h2>Stream My Music</h2>
+<div class="smart-links">
+<a id="s-spotify"><i class="fab fa-spotify"></i> Spotify</a>
+<a id="s-boomplay"><i class="fas fa-music"></i> Boomplay</a>
+<a id="s-audiomack"><i class="fas fa-headphones"></i> Audiomack</a>
+<a id="s-apple"><i class="fab fa-apple"></i> Apple Music</a>
+<a id="s-youtube"><i class="fab fa-youtube"></i> YouTube Music</a>
+<a id="s-deezer"><i class="fab fa-deezer"></i> Deezer</a>
+</div>
+</section>
+
+<!-- ===== EMBEDS ===== -->
 <section id="music">
-<h2>Music</h2>
+<h2>Listen Everywhere</h2>
 
-<!-- BOOMPLAY -->
-<iframe src="https://www.boomplay.com/embed/artist/000000"></iframe>
-
-<!-- AUDIOMACK -->
-<iframe src="https://audiomack.com/embed/artist/yourname"></iframe>
-
-<!-- SPOTIFY -->
-<iframe src="https://open.spotify.com/embed/artist/1Xyo4u8uXC1ZmMpatF05PJ"></iframe>
-
-<div class="socials">
-  <a href="#"><i class="fab fa-youtube"></i></a>
-  <a href="#"><i class="fab fa-instagram"></i></a>
-  <a href="#"><i class="fab fa-x-twitter"></i></a>
-  <a href="#"><i class="fab fa-facebook"></i></a>
+<div class="platforms">
+<div class="platform"><iframe id="e-spotify"></iframe></div>
+<div class="platform"><iframe id="e-boomplay"></iframe></div>
+<div class="platform"><iframe id="e-audiomack"></iframe></div>
+<div class="platform"><iframe id="e-apple"></iframe></div>
+<div class="platform"><iframe id="e-youtube"></iframe></div>
 </div>
 </section>
 
-<section id="merch">
-<h2>Merch Store</h2>
+<footer>© 2025 T. Michael</footer>
 
-<div class="merch-grid">
-  <div class="merch-item">
-    <img src="https://via.placeholder.com/300x300" alt="Merch">
-    <h3>Faith Over Fear Tee</h3>
-    <p>₦15,000</p>
-    <button>Buy Now</button>
-  </div>
+<!-- ===== AUTO CONNECT SCRIPT ===== -->
+<script>
+document.getElementById("s-spotify").href = LINKS.spotify;
+document.getElementById("s-boomplay").href = LINKS.boomplay;
+document.getElementById("s-audiomack").href = LINKS.audiomack;
+document.getElementById("s-apple").href = LINKS.apple;
+document.getElementById("s-youtube").href = LINKS.youtube;
+document.getElementById("s-deezer").href = LINKS.deezer;
 
-  <div class="merch-item">
-    <img src="https://via.placeholder.com/300x300" alt="Merch">
-    <h3>Gospel Drill Hoodie</h3>
-    <p>₦25,000</p>
-    <button>Buy Now</button>
-  </div>
-</div>
-</section>
-
-<section id="contact" class="contact">
-<h2>Contact / Bookings</h2>
-
-<form action="https://formspree.io/f/yourFormID" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-</section>
-
-<footer>
-<p>© 2025 T. Michael. All Rights Reserved.</p>
-</footer>
+document.getElementById("e-spotify").src = LINKS.spotifyEmbed;
+document.getElementById("e-boomplay").src = LINKS.boomplayEmbed;
+document.getElementById("e-audiomack").src = LINKS.audiomackEmbed;
+document.getElementById("e-apple").src = LINKS.appleEmbed;
+document.getElementById("e-youtube").src = LINKS.youtubeEmbed;
+</script>
 
 </body>
 </html>
