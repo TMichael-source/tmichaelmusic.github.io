@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>T. Michael | Gospel Rap Artist</title>
+<meta name="description" content="Official website of T. Michael – Gospel Rap artist blending faith, drill, and afrobeats." />
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome (Social Icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a { color: #00ffcc; text-decoration: none; }
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.95);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav ul { display: flex; gap: 25px; list-style: none; }
+
+/* HERO */
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url("https://images.unsplash.com/photo-1511379938547-c1f69419868d")
+    center / cover no-repeat;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  animation: fadeDown 1.2s ease;
+}
+
+header p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  animation: fadeUp 1.2s ease;
+}
+
+header a {
+  padding: 12px 30px;
+  background: #00ffcc;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 10%;
+}
+
+section h2 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+/* MUSIC EMBEDS */
+iframe {
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.socials a {
+  font-size: 1.6rem;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* MERCH */
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.merch-item {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.merch-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.merch-item button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00ffcc;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* CONTACT */
+.contact form {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, button {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background: #00ffcc;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  opacity: 0.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header h1 { font-size: 2.4rem; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>T. Michael</strong>
+  <ul>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#merch">Merch</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div>
+    <h1>T. Michael</h1>
+    <p>Gospel Rap | Drill | Afrobeats</p>
+    <a href="#music">▶ Listen Now</a>
+  </div>
+</header>
+
+<section id="music">
+<h2>Music</h2>
+
+<!-- BOOMPLAY -->
+<iframe src="https://www.boomplay.com/embed/artist/000000"></iframe>
+
+<!-- AUDIOMACK -->
+<iframe src="https://audiomack.com/embed/artist/yourname"></iframe>
+
+<!-- SPOTIFY -->
+<iframe src="https://open.spotify.com/embed/artist/1Xyo4u8uXC1ZmMpatF05PJ"></iframe>
+
+<div class="socials">
+  <a href="#"><i class="fab fa-youtube"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-x-twitter"></i></a>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+</section>
+
+<section id="merch">
+<h2>Merch Store</h2>
+
+<div class="merch-grid">
+  <div class="merch-item">
+    <img src="https://via.placeholder.com/300x300" alt="Merch">
+    <h3>Faith Over Fear Tee</h3>
+    <p>₦15,000</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="merch-item">
+    <img src="https://via.placeholder.com/300x300" alt="Merch">
+    <h3>Gospel Drill Hoodie</h3>
+    <p>₦25,000</p>
+    <button>Buy Now</button>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact / Bookings</h2>
+
+<form action="https://formspree.io/f/yourFormID" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2025 T. Michael. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
